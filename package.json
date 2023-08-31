@@ -4,17 +4,14 @@
   "description": "UTN curso fullstack 2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rafa-rivadeneyra/fullstack_parte2_UTN.git"
   },
   "keywords": [
-    "UTN",
-    "nodejs",
-    "Curso",
-    "FullStack"
+    "ES"
   ],
   "author": "Rafael Rivadeneyra",
   "license": "ISC",
