@@ -1,0 +1,442 @@
+/* Estilo para el contenedor principal */
+.container {
+    display: flex; /* Utilizar un diseño flexible */
+}
+
+
+/* Resetear los estilos predeterminados del navegador */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo básico para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9c9c9;
+    color: #022916;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+/* Estilo para encabezados */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para párrafos */
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para enlaces */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo básico para el navbar */
+.navbar {
+    background-color: #333; /* Color de fondo del navbar */
+    overflow: hidden;
+    position: sticky;
+    top: 0; /* Mantener el navbar pegajoso en la parte superior de la página */
+    z-index: 100; /* Asegurar que el navbar esté encima del contenido */
+
+}
+
+/* Estilo para los elementos de navegación */
+.navbar a {
+    float: left; /* Para alinear los elementos a la izquierda o derecha*/
+    display: block; /* Para que los elementos ocupen todo el ancho del navbar */
+    color: rgb(147, 133, 133); /* Color de texto para los enlaces */
+    text-align: right; /* Centrar el texto horizontalmente */
+    padding: 14px 16px; /* Espaciado interno (arriba/abajo y izquierda/derecha) */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */    
+}
+
+/* Estilo para los enlaces al pasar el cursor por encima */
+.navbar a:hover {
+    background-color: #a82f2fd0; /* Cambiar el color de fondo al pasar el cursor por encima */
+    color: black; /* Cambiar el color del texto al pasar el cursor por encima */
+}
+
+
+/* Estilo básico para el encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 20px 0; /* Espaciado interno (arriba/abajo y sin espaciado en los lados) */
+    text-align: center; /* Centrar el contenido del encabezado horizontalmente */
+}
+
+/* Estilo para el título del encabezado */
+header h1 {
+    font-size: 36px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espaciado inferior para el título */
+}
+
+/* Estilo para el subtítulo o descripción */
+header p {
+    font-size: 18px; /* Tamaño de fuente para el subtítulo/descripción */
+    margin-bottom: 20px; /* Espaciado inferior para el subtítulo/descripción */
+}
+
+/* Estilo para los enlaces de navegación en el encabezado */
+header a {
+    color: white; /* Color de texto para los enlaces de navegación */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    margin: 0 15px; /* Espaciado horizontal entre los enlaces */
+}
+
+/* Estilo para los enlaces al pasar el cursor por encima */
+header a:hover {
+    text-decoration: underline; /* Subrayar los enlaces al pasar el cursor por encima */
+}
+
+
+/* Estilo para el contenido principal */
+.main-content {
+    flex: 3; /* Ocupar 3/4 del ancho disponible */
+    background-color: #f9f9f9; /* Color de fondo del contenido principal */
+    padding: 20px; /* Espaciado interno del contenido principal */
+}
+
+/* Estilo básico para la sección <main> */
+main {    
+    background-color: #fff; /* Color de fondo del contenido principal */
+    color: #333; /* Color del texto en el contenido principal */
+    padding: 20px; /* Espaciado interno del contenido principal */
+    margin: 20px auto; /* Márgenes automáticos para centrar el contenido */
+    max-width: 960px; /* Ancho máximo del contenido principal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenido */
+}
+
+/* Estilo para encabezados dentro de <main> */
+main h2 {
+    font-size: 24px; /* Tamaño de fuente para encabezados secundarios */
+    margin-top: 20px; /* Espaciado superior para encabezados secundarios */
+}
+
+/* Estilo para párrafos dentro de <main> */
+main p {
+    font-size: 18px; /* Tamaño de fuente para párrafos en el contenido principal */
+    margin-bottom: 15px; /* Espaciado inferior para párrafos */
+}
+
+/* Estilo para enlaces dentro de <main> */
+main a {
+    color: #0078d4; /* Color de texto para enlaces */
+    text-decoration: none; /* Eliminar subrayado de enlaces */
+}
+
+/* Estilo para enlaces al pasar el cursor por encima dentro de <main> */
+main a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el cursor por encima */
+}
+
+/* Estilo básico para las secciones <section> */
+section {
+    background-color: #f9f9f9; /* Color de fondo de las secciones */
+    padding: 20px; /* Espaciado interno de las secciones */
+    margin-bottom: 20px; /* Espaciado inferior entre secciones */
+    border: 1px solid #ddd; /* Borde alrededor de las secciones */
+}
+
+/* Estilo para encabezados dentro de las secciones */
+section h2 {
+    font-size: 24px; /* Tamaño de fuente para encabezados de sección */
+    margin-top: 0; /* Eliminar el margen superior predeterminado */
+}
+
+/* Estilo para párrafos dentro de las secciones */
+section p {
+    font-size: 16px; /* Tamaño de fuente para párrafos en las secciones */
+    margin-bottom: 10px; /* Espaciado inferior para párrafos */
+}
+
+/* Estilo para enlaces dentro de las secciones */
+section a {
+    color: #0078d4; /* Color de texto para enlaces */
+    text-decoration: none; /* Eliminar subrayado de enlaces */
+}
+
+/* Estilo para enlaces al pasar el cursor por encima dentro de las secciones */
+section a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el cursor por encima */
+}
+
+
+/* Estilo para el aside */
+.sidebar {
+    flex: 1; /* Ocupar 1/4 del ancho disponible */
+    background-color: #333; /* Color de fondo del aside */
+    color: white; /* Color del texto en el aside */
+    padding: 20px; /* Espaciado interno del aside */
+}
+
+
+/* Estilo básico para el aside */
+aside {
+    flex: 1;
+    background-color: #f9f9f9; /* Color de fondo del aside */
+    border: 1px solid #ddd; /* Borde alrededor del aside */
+    padding: 20px; /* Espaciado interno del aside */
+    margin: 0 0 20px 20px; /* Margen derecho e inferior, alinear a la derecha */
+}
+
+/* Estilo para encabezados dentro del aside */
+aside h3 {
+    font-size: 20px; /* Tamaño de fuente para encabezados de aside */
+    margin-top: 0; /* Eliminar el margen superior predeterminado */
+}
+
+/* Estilo para párrafos dentro del aside */
+aside p {
+    font-size: 16px; /* Tamaño de fuente para párrafos en el aside */
+    margin-bottom: 10px; /* Espaciado inferior para párrafos */
+}
+
+/* Estilo para enlaces dentro del aside */
+aside a {
+    color: #0078d4; /* Color de texto para enlaces en el aside */
+    text-decoration: none; /* Eliminar subrayado de enlaces en el aside */
+}
+
+/* Estilo para enlaces al pasar el cursor por encima en el aside */
+aside a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el cursor por encima en el aside */
+}
+
+
+
+/* Estilo básico para el footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color del texto en el footer */
+    padding: 20px 0; /* Espaciado interno (arriba/abajo) en el footer */
+    text-align: center; /* Centrar el contenido del footer horizontalmente */
+}
+
+/* Estilo para enlaces en el footer */
+footer a {
+    color: #fff; /* Color de texto para los enlaces en el footer */
+    text-decoration: none; /* Eliminar subrayado de los enlaces en el footer */
+    margin: 0 10px; /* Espaciado horizontal entre los enlaces en el footer */
+}
+
+/* Estilo para enlaces al pasar el cursor por encima en el footer */
+footer a:hover {
+    text-decoration: underline; /* Subrayar los enlaces al pasar el cursor por encima en el footer */
+}
+
+
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+    max-width: 400px; /* Ancho máximo del contenedor del formulario */
+    margin: 0 auto; /* Centrar el formulario en el centro de la página */
+    padding: 20px; /* Espaciado interno del contenedor del formulario */
+    border: 1px solid #ddd; /* Borde alrededor del contenedor del formulario */
+    background-color: #f9f9f9; /* Color de fondo del contenedor del formulario */
+}
+
+/* Estilo para los campos de entrada de texto */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container textarea {
+    width: 100%; /* Ancho completo para los campos de entrada de texto */
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    margin-bottom: 10px; /* Espaciado inferior entre los campos de entrada */
+    border: 1px solid #ddd; /* Borde alrededor de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados para los campos de entrada */
+}
+
+/* Estilo para las etiquetas de los campos de entrada */
+.form-container label {
+    display: block; /* Mostrar etiquetas en una nueva línea */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+
+/* Estilo para los botones del formulario */
+.form-container button[type="submit"] {
+    background-color: #0078d4; /* Color de fondo del botón de enviar */
+    color: #fff; /* Color del texto del botón de enviar */
+    padding: 10px 20px; /* Espaciado interno del botón de enviar */
+    border: none; /* Eliminar el borde del botón de enviar */
+    border-radius: 5px; /* Bordes redondeados para el botón de enviar */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+}
+
+/* Estilo para el botón de enviar al pasar el cursor por encima */
+.form-container button[type="submit"]:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el cursor por encima */
+}
+
+
+
+        /* Estilo para el contenedor del bloque Banner */
+        .imagen-banner-container {
+            position: relative;
+            width: 300px; /* Ancho del contenedor (ajusta según tus necesidades) */
+            margin: 0 auto; /* Centrar el bloque horizontalmente */
+        }
+
+        /* Estilo para la imagen */
+        .image-banner {
+            width: 100%; /* Ancho completo de la imagen */
+            height: auto; /* Altura automática para mantener la proporción */
+            display: block;
+        }
+
+        /* Estilo para el texto superpuesto */
+        .text-banner {
+            position: absolute;
+            top: 50%; /* Alinear el texto verticalmente en el centro */
+            left: 50%; /* Alinear el texto horizontalmente en el centro */
+            transform: translate(-50%, -50%); /* Centrar el texto en el medio del bloque */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+            color: white; /* Color del texto */
+            padding: 10px; /* Espaciado interno del texto */
+            text-align: center; /* Centrar el texto horizontalmente */
+        }
+
+
+                /* Estilo para el contenedor del bloque */
+        .mosaico-container {
+            display: flex; /* Utilizar un diseño flexible */
+            align-items: center; /* Centrar verticalmente los elementos */
+            max-width: 800px; /* Ancho máximo del contenedor (ajusta según tus necesidades) */
+            margin: 0 auto; /* Centrar el bloque horizontalmente */
+            padding: 20px; /* Espaciado interno del bloque */
+        }
+
+        /* Estilo para la imagen */
+        .image-mosaico-der {
+            flex: 1; /* Ocupar 1/2 del ancho disponible */
+            max-width: 50%; /* Ancho máximo de la imagen (ajusta según tus necesidades) */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        /* Estilo para el texto a la derecha */
+        .text-mosaico-der {
+            flex: 1; /* Ocupar 1/2 del ancho disponible */
+            padding: 20px; /* Espaciado interno del texto */
+            text-align: left; /* Alinear el texto a la izquierda */
+        }
+
+        /* Estilo para el contenedor del bloque */
+        .mosaico-container {
+            display: flex; /* Utilizar un diseño flexible */
+            align-items: center; /* Centrar verticalmente los elementos */
+            max-width: 800px; /* Ancho máximo del contenedor (ajusta según tus necesidades) */
+            margin: 0 auto; /* Centrar el bloque horizontalmente */
+            padding: 20px; /* Espaciado interno del bloque */
+        }
+
+        /* Estilo para la imagen */
+        .image-mosaico-der {
+            flex: 1; /* Ocupar 1/2 del ancho disponible */
+            max-width: 50%; /* Ancho máximo de la imagen (ajusta según tus necesidades) */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        /* Estilo para el texto a la derecha */
+        .text-mosaico-der {
+            flex: 1; /* Ocupar 1/2 del ancho disponible */
+            padding: 20px; /* Espaciado interno del texto */
+            text-align: left; /* Alinear el texto a la izquierda */
+        }
+
+        /* Estilo para el contenedor del bloque grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas con tamaño igual */
+            grid-gap: 20px; /* Espacio entre elementos */
+        }
+
+        /* Estilo para los elementos dentro del bloque grid */
+        .grid-item {
+            border: 1px solid #ddd; /* Borde alrededor de cada elemento */
+            padding: 20px; /* Espaciado interno de cada elemento */
+            text-align: center; /* Centrar el contenido horizontalmente */
+        }
+        
+        /****************************************************/
+        /* Estilo para el contenedor del bloque de contacto */
+        .contact-container {
+            max-width: 400px; /* Ancho máximo del bloque (ajusta según tus necesidades) */
+            margin: 0 auto; /* Centrar el bloque horizontalmente */
+            padding: 20px; /* Espaciado interno del bloque */
+            border: 1px solid #ddd; /* Borde alrededor del bloque */
+            background-color: #f9f9f9; /* Color de fondo del bloque */
+        }
+
+        /* Estilo para los campos de entrada de texto */
+        .contact-input {
+            width: 100%; /* Ancho completo de los campos de entrada */
+            padding: 10px; /* Espaciado interno de los campos de entrada */
+            margin-bottom: 10px; /* Espaciado inferior entre campos de entrada */
+            border: 1px solid #ddd; /* Borde alrededor de los campos de entrada */
+            border-radius: 5px; /* Bordes redondeados para los campos de entrada */
+        }
+
+        /* Estilo para el área de mensaje */
+        .contact-textarea {
+            width: 100%; /* Ancho completo del área de mensaje */
+            padding: 10px; /* Espaciado interno del área de mensaje */
+            margin-bottom: 10px; /* Espaciado inferior entre el área de mensaje */
+            border: 1px solid #ddd; /* Borde alrededor del área de mensaje */
+            border-radius: 5px; /* Bordes redondeados para el área de mensaje */
+        }
+
+        /* Estilo para el botón de enviar */
+        .contact-button {
+            background-color: #0078d4; /* Color de fondo del botón de enviar */
+            color: white; /* Color del texto del botón de enviar */
+            padding: 10px 20px; /* Espaciado interno del botón de enviar */
+            border: none; /* Eliminar el borde del botón de enviar */
+            border-radius: 5px; /* Bordes redondeados para el botón de enviar */
+            cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+        }
+
+        /* Estilo para el botón de enviar al pasar el cursor por encima */
+        .contact-button:hover {
+            background-color: #0056b3; /* Cambiar el color de fondo al pasar el cursor por encima del botón */
+        }
+
+        /* Estilo para el footer */
+        footer {
+            background-color: #333; /* Color de fondo del footer */
+            color: white; /* Color del texto en el footer */
+            padding: 20px 0; /* Espaciado interno (arriba/abajo) en el footer */
+            text-align: center; /* Centrar el contenido del footer horizontalmente */
+        }
+
+        /* Estilo para los enlaces en el footer */
+        footer a {
+            color: #fff; /* Color de texto para los enlaces en el footer */
+            text-decoration: none; /* Eliminar subrayado de los enlaces en el footer */
+            margin: 0 10px; /* Espaciado horizontal entre los enlaces en el footer */
+        }
+
+        /* Estilo para los enlaces al pasar el cursor por encima en el footer */
+        footer a:hover {
+            text-decoration: underline; /* Subrayar los enlaces al pasar el cursor por encima en el footer */
+        }
+
+        /* Estilo para el texto del pie de página */
+        .footer-text {
+            font-size: 14px; /* Tamaño de fuente para el texto del pie de página */
+            margin-top: 10px; /* Espaciado superior para el texto del pie de página */
+        }
