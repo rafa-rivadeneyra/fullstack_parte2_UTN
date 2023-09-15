@@ -3,6 +3,11 @@
     display: flex; /* Utilizar un diseño flexible */
 }
 
+     /* Agregar espacio superior al contenido principal */
+#contenido-principal {
+    margin-top: 2px; /* Ajusta según la altura del menú fijo */
+}
+
 
 /* Resetear los estilos predeterminados del navegador */
 body, h1, p {
@@ -191,7 +196,7 @@ aside {
     background-color: #f9f9f9; /* Color de fondo del aside */
     border: 1px solid #ddd; /* Borde alrededor del aside */
     padding: 20px; /* Espaciado interno del aside */
-    margin: 0 0 20px 20px; /* Margen derecho e inferior, alinear a la derecha */
+    margin: 20px 0 20px 20px; /* Margen derecho e inferior, alinear a la derecha */
 }
 
 /* Estilo para encabezados dentro del aside */
@@ -304,9 +309,9 @@ footer a:hover {
             position: absolute;
             top: 50%; /* Alinear el texto verticalmente en el centro */
             left: 50%; /* Alinear el texto horizontalmente en el centro */
-            transform: translate(-50%, -50%); /* Centrar el texto en el medio del bloque */
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
-            color: white; /* Color del texto */
+            transform: translate(-20%, -50%); /* Centrar el texto en el medio del bloque */
+            background-color: rgba(207, 202, 202, 0.4); /* Fondo semitransparente para el texto */
+            color: rgb(27, 26, 26); /* Color del texto */
             padding: 10px; /* Espaciado interno del texto */
             text-align: center; /* Centrar el texto horizontalmente */
         }
@@ -440,3 +445,22 @@ footer a:hover {
             font-size: 14px; /* Tamaño de fuente para el texto del pie de página */
             margin-top: 10px; /* Espaciado superior para el texto del pie de página */
         }
+
+        /* Estilo para la imagen principal */
+        #imagen_crece {
+            width: 100%; /* Tamaño inicial de la imagen */
+            transition: transform 0.1s ease; /* Transición para el efecto de agrandar */
+        }
+
+     /* Estilo para el menú con posición fija */
+     .fixed-menu {
+        position: fixed; /* Menú fijo en la parte superior */
+        top: 0; /* Alineado en la parte superior de la ventana */
+        width: 100%; /* Ancho completo */
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el menú */
+        body {
+            margin-top: 50px; /* Ajusta según la altura del menú */
+        }
+
+    
+    }        
